@@ -30,10 +30,17 @@ console.log(t);
 
 //  doc.setAttribute("id" , "my");
 
-let div = document.createElement("div") ; 
-div.classList.add("loop")
-doc.appendChild(div)
+// let div = document.createElement("div") ; 
+// div.classList.add("loop")
+// doc.appendChild(div)
 
+
+function allert(){
+    alert("hello");
+}
+doc.style.backgroundColor = "gray"
+doc.addEventListener('mousemove' ,allert)
+doc.removeEventListener('mousemove',allert) ; 
 
 
 
