@@ -35,15 +35,41 @@ console.log(t);
 // doc.appendChild(div)
 
 
-function allert(){
-    alert("hello");
-}
-doc.style.backgroundColor = "gray"
-doc.addEventListener('mousemove' ,allert)
-doc.removeEventListener('mousemove',allert) ; 
+// function allert(){
+//     alert("hello");
+// }
+doc.style.backgroundColor = "gray" ;
+// doc.addEventListener('click' ,allert)
+// doc.removeEventListener('click',allert) ; 
 
 
+// let links  = document.querySelector(".like") ; 
+// links.addEventListener('click', function(event) {
+//     event.preventDefault() ; 
+//     console.log("its prevented");
+// })
 
+
+//  
+// function para (event) {
+//     console.log("para : " + event.target.textContent);
+// }
+// doc.addEventListener('click', para) 
+// for(let  i= 0 ; i< 40 ; i++ ) {
+//      let newele = document.createElement("p") ; 
+//      newele.textContent = " i am para no. " + i ; 
+//      doc.appendChild(newele)
+
+// }
+//  document.body.appendChild(doc) ; 
+doc.addEventListener('click' , function(event) {
+     if(event.target.nodeName === 'para' ) 
+      { 
+        console.log("cliked on para" + event.target.texContent) ; 
+      }
+})
+  
+  
 
 
 
